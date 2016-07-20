@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10">
+
+   <LinearLayout
+       android:id="@+id/ll_image_bg"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_gravity="center"
+       android:gravity="top|center_horizontal"
+       android:orientation="vertical"
+       android:layout_weight="4">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@android:color/transparent"
+          android:title="Collapsing Toolbar"
+          android:layout_alignParentTop="true"
+          android:navigationIcon="@mipmap/back_icon"
+          />
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+          android:id="@+id/iv_track_artist"
+          android:layout_width="@dimen/single_image_height"
+          android:layout_height="@dimen/single_image_width"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="5dp"
+          android:src="@mipmap/ic_launcher"
+          app:border="true"
+
+          app:border_width="1dp"
+          app:shadow="true" />
+
+   </LinearLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="6">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="@dimen/ll_padding_top"
+          android:paddingBottom="@dimen/ll_padding_bottom"
+          android:paddingLeft="@dimen/ll_padding_left"
+          android:paddingRight="@dimen/ll_padding_right">
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_movie_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             android:text="@string/coll_name"/>
+
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="@dimen/ll_padding_top"
+          android:paddingBottom="@dimen/ll_padding_bottom"
+          android:paddingLeft="@dimen/ll_padding_left"
+          android:paddingRight="@dimen/ll_padding_right">
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_rating"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             android:text="@string/rating"/>
+
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_rating_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="@dimen/ll_padding_top"
+          android:paddingBottom="@dimen/ll_padding_bottom"
+          android:paddingLeft="@dimen/ll_padding_left"
+          android:paddingRight="@dimen/ll_padding_right">
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_release"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             android:text="@string/release"/>
+
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_release_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="@dimen/ll_padding_top"
+          android:paddingBottom="@dimen/ll_padding_bottom"
+          android:paddingLeft="@dimen/ll_padding_left"
+          android:paddingRight="@dimen/ll_padding_right">
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_overview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             android:text="@string/overview"/>
+
+         <sandip.upgrad_test_sandip.widgets.MyTextView
+             android:id="@+id/tv_overview_text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             customfontdemo:fontName="@string/font_name"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             />
+
+      </LinearLayout>
+
+
+   </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

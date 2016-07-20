@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="ws_get_data">https://itunes.apple.com/search?term=Michael+jackson</string>-->
+
+    <string name="ws_popular_data">https://api.themoviedb.org/3/movie/popular?api_key=e7ffdb5de5f0baf8170fec4232120a3a&amp;page=1</string>
+    <string name="ws_top_rated_data">https://api.themoviedb.org/3/movie/top_rated?api_key=e7ffdb5de5f0baf8170fec4232120a3a&amp;page=1</string>
+
+
+
+    <string name="poster_path">https://image.tmdb.org/t/p/w640</string>
+
+</resources>

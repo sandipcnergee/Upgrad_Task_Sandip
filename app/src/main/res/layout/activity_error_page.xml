@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_ion_white_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_ep" />
+
+    <ImageView
+        android:id="@+id/iv_cloud_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ion_white_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_top_ep"
+        android:background="@mipmap/cloud_error" />
+
+    <sandip.upgrad_test_sandip.widgets.MyTextView
+        android:id="@+id/tv_app_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_cloud_error"
+        android:layout_centerHorizontal="true"
+        android:text="Oops...something went wrong"
+        android:textColor="@android:color/white"
+        customfontdemo:fontName="@string/font_name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <sandip.upgrad_test_sandip.widgets.MyTextView
+        android:id="@+id/tv_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_app_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_ep"
+        android:text="Please try again later."
+        android:textColor="@android:color/white"
+        customfontdemo:fontName="@string/font_name"
+        android:textSize="14sp" />
+
+    <sandip.upgrad_test_sandip.widgets.MyTextView
+        android:id="@+id/tv_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_try"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_tv_gb"
+        customfontdemo:fontName="@string/font_name"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:text="Go back"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <sandip.upgrad_test_sandip.widgets.MyTextView
+        android:id="@+id/tv_actual_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_tv_gb"
+        android:paddingBottom="@dimen/margin_top_ep"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        customfontdemo:fontName="@string/font_name"
+        android:text="Go back"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

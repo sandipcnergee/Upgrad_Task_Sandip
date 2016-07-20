@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="padding_left">5dp</dimen>
+    <dimen name="padding_right">5dp</dimen>
+    <dimen name="padding_top">5dp</dimen>
+    <dimen name="padding_bottom">5dp</dimen>
+    <dimen name="padding">5dp</dimen>
+
+    <dimen name="padding_tile">3dp</dimen>
+
+    <dimen name="dim_card">150dp</dimen>
+
+    <dimen name="margin_top_ep">25dp</dimen>
+
+    <dimen name="margin_top_tv_gb">10dp</dimen>
+
+    <dimen name="image_height">80dp</dimen>
+    <dimen name="image_width">80dp</dimen>
+
+    <dimen name="single_image_height">100dp</dimen>
+    <dimen name="single_image_width">100dp</dimen>
+
+    <dimen name="ll_padding_top">3dp</dimen>
+    <dimen name="ll_padding_bottom">7dp</dimen>
+    <dimen name="ll_padding_left">5dp</dimen>
+    <dimen name="ll_padding_right">5dp</dimen>
+
+</resources>

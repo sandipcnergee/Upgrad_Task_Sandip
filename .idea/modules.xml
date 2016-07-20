@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Upgrad_Task_Sandip.iml" filepath="$PROJECT_DIR$/Upgrad_Task_Sandip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularImageView/circularImageView.iml" filepath="$PROJECT_DIR$/circularImageView/circularImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager_lib/viewpager_lib.iml" filepath="$PROJECT_DIR$/viewpager_lib/viewpager_lib.iml" />
+    </modules>
+  </component>
+</project>

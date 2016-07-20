@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+        
+        <ImageView
+            android:id="@+id/iv_track_image"
+            android:layout_width="@dimen/image_height"
+            android:layout_height="@dimen/image_height"
+            android:background="@mipmap/ic_launcher"
+            android:padding="@dimen/padding"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_trackdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:layout_toRightOf="@+id/iv_track_image"
+            android:layout_toLeftOf="@+id/ll_tracktime"
+            android:orientation="vertical">
+
+            <sandip.upgrad_test_sandip.widgets.MyTextView
+                android:id="@+id/tv_track_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                customfontdemo:fontName="@string/font_name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="3:23"/>
+
+            <sandip.upgrad_test_sandip.widgets.MyTextView
+                android:id="@+id/tv_collection_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                customfontdemo:fontName="@string/font_name"
+                android:textSize="13sp"
+                android:text="3:23"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tracktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding"
+            android:orientation="vertical">
+
+            <sandip.upgrad_test_sandip.widgets.MyTextView
+                android:id="@+id/tv_track_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                customfontdemo:fontName="@string/font_name"
+                android:textSize="18sp"
+                android:text="3:23"/>
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+
+
+</LinearLayout>
